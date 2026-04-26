@@ -1,0 +1,37 @@
+/* Sidebar design */
+.sidebar {
+  height: 100%;
+  width: 200px; /* Big enough to read, but compact */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #2c3e50; /* Dark professional color */
+  padding-top: 20px;
+}
+
+/* Sidebar links */
+.sidebar a {
+  padding: 12px 15px; /* Large clickable area */
+  text-decoration: none;
+  font-size: 18px; /* Big enough to be readable */
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Hover effect for a "big" feel */
+.sidebar a:hover {
+  background-color: #34495e;
+  padding-left: 25px; /* Subtly shifts right when hovered */
+}
+
+/* Highlights the current page */
+.sidebar a.active {
+  background-color: #3498db;
+}
+
+/* Keeps your main content from being hidden behind the sidebar */
+.main-content {
+  margin-left: 200px;
+  padding: 20px;
+}
